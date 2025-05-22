@@ -1,48 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leandro de Castro Pereira - Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
     body {
-      background: #f4f4f4;
+      background: #f9f9f9;
       color: #333;
-      line-height: 1.6;
     }
     header {
       background: linear-gradient(to right, #005c97, #363795);
       color: white;
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 4rem 2rem 2rem;
+    }
+    .language-switch {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .language-switch button {
+      background: white;
+      color: #005c97;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
     }
     header img {
+      display: block;
+      margin: 0 auto 1rem;
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       object-fit: cover;
       border: 4px solid white;
-      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     section {
-      padding: 3rem 2rem;
-      max-width: 900px;
+      padding: 2rem;
+      max-width: 960px;
       margin: auto;
     }
     h2 {
       color: #005c97;
-      margin-bottom: 1rem;
       border-bottom: 2px solid #ccc;
+      margin-bottom: 1rem;
       padding-bottom: .5rem;
     }
     ul {
-      margin-left: 1.5rem;
+      padding-left: 1.5rem;
     }
     footer {
       background: #222;
@@ -50,101 +67,60 @@
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
+      margin-top: 2rem;
     }
-    a {
-      color: #005c97;
-      text-decoration: none;
+    .lang {
+      display: none;
     }
-    a:hover {
-      text-decoration: underline;
+    .lang.active {
+      display: block;
     }
   </style>
 </head>
 <body>
+  <div class="language-switch">
+    <button onclick="switchLanguage('pt')">🇧🇷 PT</button>
+    <button onclick="switchLanguage('en')">🇺🇸 EN</button>
+  </div>
   <header>
     <img src="foto.jpg" alt="Leandro de Castro Pereira">
     <h1>Leandro de Castro Pereira</h1>
-    <p>Desenvolvedor Backend | Especialista em JAVA | Arquiteto de Soluções | MBA em Gestão de Negócios</p>
+    <p data-lang="pt" class="lang active">Desenvolvedor Backend | Especialista em .NET Core C# | Arquiteto de Soluções</p>
+    <p data-lang="en" class="lang">Backend Developer | .NET Core C# Specialist | Solutions Architect</p>
   </header>
 
   <section>
-    <h2>Resumo Profissional</h2>
-    <p>Profissional com mais de 18 anos de experiência em gestão administrativa, TI e desenvolvimento de software. Especialista em JAVA, .NET Core C#, APIs RESTful, microserviços, arquitetura de software e soluções escaláveis. Inglês avançado e experiência internacional.</p>
-  </section>
-
-  <section>
-    <h2>Experiência Profissional</h2>
+    <h2 data-lang="pt" class="lang active">Experiência Profissional</h2>
+    <h2 data-lang="en" class="lang">Professional Experience</h2>
     <ul>
-      <li><strong>Corporis Sanu</strong> - Gerente Administrativo e de TI (2006 – 2024)</li>
-      <li><strong>Inter Valor</strong> - Técnico em Manutenção (2005)</li>
-      <li><strong>SICM</strong> - Técnico em Manutenção (2003 – 2004)</li>
-      <li><strong>INFORUY</strong> - Desenvolvedor de Software (2003 – 2006)</li>
+      <li data-lang="pt" class="lang active">Mais de 10 anos de experiência em desenvolvimento backend e gestão de TI.</li>
+      <li data-lang="en" class="lang">Over 10 years of experience in backend development and IT management.</li>
+      <li data-lang="pt" class="lang active">Especialização em APIs RESTful, microserviços e arquitetura de software.</li>
+      <li data-lang="en" class="lang">Specialized in RESTful APIs, microservices, and software architecture.</li>
     </ul>
   </section>
 
   <section>
-    <h2>Formação Acadêmica</h2>
-    <ul>
-      <li>Especialização em Tecnologia Java – UNOPAR (2024 - 2025)</li>
-      <li>MBA em Gestão de Negócios – Faculdade Ruy Barbosa (2007 - 2009)</li>
-      <li>Bacharelado em Sistemas de Informação – Faculdade Ruy Barbosa (2002 - 2006)</li>
-      <li>Curso de Inglês – Dublin School of English, Irlanda (2011 - 2012)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Cursos e Certificações</h2>
-    <ul>
-      <li>Inteligência Artificial – Intermediário e Avançado (2025)</li>
-      <li>Python – Intermediário e Avançado (2024)</li>
-      <li>Gestão de Pessoas – SEBRAE (2009)</li>
-      <li>Oratória e Marketing Pessoal (2008)</li>
-      <li>MS Project (2003)</li>
-      <li>Montagem e Manutenção de Computadores (2001)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-      <li>Linguagens: .NET Core C#, Java, Python</li>
-      <li>Frameworks: ASP.NET MVC, Entity Framework Core</li>
-      <li>APIs: RESTful, Microserviços</li>
-      <li>Arquitetura: Design Patterns, SOLID</li>
-      <li>Bancos de Dados: Modelagem e Administração</li>
-      <li>Infraestrutura: Redes e Suporte Técnico</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Idiomas</h2>
-    <ul>
-      <li>Português: Fluente</li>
-      <li>Inglês: Avançado</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Voluntariado e Publicações</h2>
-    <ul>
-      <li>Instrutor de informática básica para comunidades carentes</li>
-      <li>Trabalho social com a Igreja Senhor do Bonfim, Itabuna</li>
-      <li>Artigo: Workflowcientefico - Revista Científica (2006)</li>
-      <li>Palestrante: Congresso da Sociedade Brasileira de Computação (2004)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contato</h2>
-    <p>Emails: <a href="mailto:leandrocasp@yahoo.com.br">Yahoo</a> | <a href="mailto:leocasp@gmail.com">Gmail</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/leandro-de-castro-pereira-863a33350">linkedin.com/in/leandro-de-castro-pereira</a></p>
-    <p>WhatsApp: <a href="https://wa.me/5573988590827?text=Olá%2C%20gostaria%20de%20mais%20informações." >55 (73) 988590827</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/leo_castropereira?igsh=MWt1djdyN3pheXN2ag==">@leo_castropereira</a></p>
-    <p>GitHub: <a href="https://github.com/Leandrocasp" target="_blank">github.com/Leandrocasp</a> </p>
+    <h2 data-lang="pt" class="lang active">Sobre Mim</h2>
+    <h2 data-lang="en" class="lang">About Me</h2>
+    <p data-lang="pt" class="lang active">Moro em Lauro de Freitas-BA, sou apaixonado por tecnologia e soluções eficientes. Já atuei como gerente de TI, desenvolvedor, técnico em manutenção e instrutor voluntário.</p>
+    <p data-lang="en" class="lang">I live in Lauro de Freitas-BA, passionate about technology and efficient solutions. I've worked as an IT manager, developer, maintenance technician, and volunteer instructor.</p>
   </section>
 
   <footer>
     <p>&copy; 2025 Leandro de Castro Pereira. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(el => {
+        el.classList.remove('active');
+      });
+      document.querySelectorAll(`[data-lang="${lang}"]`).forEach(el => {
+        el.classList.add('active');
+      });
+    }
+  </script>
 </body>
 </html>
+
