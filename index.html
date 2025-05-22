@@ -6,93 +6,21 @@
   <title>Leandro de Castro Pereira - Portfólio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    body {
-      background: #f4f6f8;
-      color: #2c3e50;
-    }
-    header {
-      background: linear-gradient(to right, #34495e, #2c3e50);
-      color: white;
-      text-align: center;
-      padding: 5rem 2rem 3rem;
-      position: relative;
-    }
-    .language-switch {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-    .language-switch button {
-      background: white;
-      color: #2c3e50;
-      border: none;
-      padding: 0.5rem 1rem;
-      margin-left: 0.5rem;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .language-switch button:hover {
-      background: #ecf0f1;
-    }
-    header img {
-      display: block;
-      margin: 0 auto 1rem;
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border: 5px solid white;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      padding: 3rem 2rem;
-      max-width: 960px;
-      margin: auto;
-    }
-    h2 {
-      color: #34495e;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #bdc3c7;
-      padding-bottom: .5rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-      line-height: 1.6;
-    }
-    p {
-      line-height: 1.6;
-      font-size: 1.1rem;
-    }
-    footer {
-      background: #2c3e50;
-      color: #bdc3c7;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
-    .lang {
-      display: none;
-    }
-    .lang.active {
-      display: block;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #f4f4f4; color: #333; line-height: 1.6; }
+    header { background: linear-gradient(to right, #005c97, #363795); color: white; text-align: center; padding: 4rem 2rem; }
+    header img { border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid white; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto; }
+    section { padding: 3rem 2rem; max-width: 900px; margin: auto; }
+    h2 { color: #005c97; margin-bottom: 1rem; border-bottom: 2px solid #ccc; padding-bottom: .5rem; }
+    ul { margin-left: 1.5rem; }
+    footer { background: #222; color: #ccc; text-align: center; padding: 2rem; font-size: 0.9rem; }
+    a { color: #005c97; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .lang { display: none; }
+    .lang.active { display: block; }
+    .language-switch { position: absolute; top: 1rem; right: 1rem; }
+    .language-switch button { background: white; color: #2c3e50; border: none; padding: 0.5rem 1rem; margin-left: 0.5rem; border-radius: 8px; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+    .language-switch button:hover { background: #ecf0f1; }
   </style>
 </head>
 <body>
@@ -103,100 +31,147 @@
   <header>
     <img src="foto.jpg" alt="Leandro de Castro Pereira">
     <h1>Leandro de Castro Pereira</h1>
-    <p data-lang="pt" class="lang active">Desenvolvedor Backend | Especialista em .NET Core C# | Arquiteto de Soluções</p>
-    <p data-lang="en" class="lang">Backend Developer | .NET Core C# Specialist | Solutions Architect</p>
+    <p class="lang pt active">Desenvolvedor Backend | Especialista em JAVA | Arquiteto de Soluções | MBA em Gestão de Negócios</p>
+    <p class="lang en">Backend Developer | JAVA Specialist | Solutions Architect | MBA in Business Management</p>
   </header>
 
   <section>
-    <h2 data-lang="pt" class="lang active">Resumo Profissional</h2>
-    <h2 data-lang="en" class="lang">Professional Summary</h2>
-    <p data-lang="pt" class="lang active">Profissional com mais de 18 anos de experiência em gestão administrativa, TI e desenvolvimento de software. Domínio em .NET Core C#, APIs RESTful, microserviços, ASP.NET MVC, Entity Framework Core e Design Patterns. Experiência internacional e inglês avançado.</p>
-    <p data-lang="en" class="lang">Professional with over 18 years of experience in administrative management, IT, and software development. Expertise in .NET Core C#, RESTful APIs, microservices, ASP.NET MVC, Entity Framework Core, and Design Patterns. International experience and advanced English.</p>
+    <h2 class="lang pt active">Resumo Profissional</h2>
+    <h2 class="lang en">Professional Summary</h2>
+    <p class="lang pt active">Profissional com mais de 18 anos de experiência em gestão administrativa, TI e desenvolvimento de software...</p>
+    <p class="lang en">Professional with over 18 years of experience in administrative management, IT, and software development...</p>
   </section>
 
   <section>
-    <h2 data-lang="pt" class="lang active">Experiência Profissional</h2>
-    <h2 data-lang="en" class="lang">Professional Experience</h2>
-    <ul>
-      <li data-lang="pt" class="lang active"><strong>Corporis Sanu</strong> | Gerente Administrativo e de TI (2006–2024): liderança estratégica em TI, desenvolvimento com .NET, redução de custos e implantação de microserviços.</li>
-      <li data-lang="en" class="lang"><strong>Corporis Sanu</strong> | Administrative and IT Manager (2006–2024): strategic IT leadership, .NET development, cost reduction, and microservices implementation.</li>
-      <li data-lang="pt" class="lang active"><strong>Inter Valor</strong> | Técnico em Manutenção (2005): manutenção de hardware e redes.</li>
-      <li data-lang="en" class="lang"><strong>Inter Valor</strong> | Maintenance Technician (2005): hardware and network maintenance.</li>
-      <li data-lang="pt" class="lang active"><strong>SICM</strong> | Técnico em Manutenção (2003–2004): administração de redes e infraestrutura.</li>
-      <li data-lang="en" class="lang"><strong>SICM</strong> | Maintenance Technician (2003–2004): network and infrastructure administration.</li>
-      <li data-lang="pt" class="lang active"><strong>Inforuy</strong> | Desenvolvedor de Software (2003–2006): desenvolvimento e manutenção de sistemas.</li>
-      <li data-lang="en" class="lang"><strong>Inforuy</strong> | Software Developer (2003–2006): system development and maintenance.</li>
+    <h2 class="lang pt active">Experiência Profissional</h2>
+    <h2 class="lang en">Professional Experience</h2>
+    <ul class="lang pt active">
+      <li><strong>Corporis Sanu</strong> - Gerente Administrativo e de TI (2006 – 2024)</li>
+      <li><strong>Inter Valor</strong> - Técnico em Manutenção (2005)</li>
+      <li><strong>SICM</strong> - Técnico em Manutenção (2003 – 2004)</li>
+      <li><strong>INFORUY</strong> - Desenvolvedor de Software (2003 – 2006)</li>
+    </ul>
+    <ul class="lang en">
+      <li><strong>Corporis Sanu</strong> – Administrative and IT Manager (2006 – 2024)</li>
+      <li><strong>Inter Valor</strong> – Maintenance Technician (2005)</li>
+      <li><strong>SICM</strong> – Maintenance Technician (2003 – 2004)</li>
+      <li><strong>INFORUY</strong> – Software Developer (2003 – 2006)</li>
     </ul>
   </section>
 
   <section>
-    <h2 data-lang="pt" class="lang active">Formação Acadêmica</h2>
-    <h2 data-lang="en" class="lang">Academic Background</h2>
-    <ul>
-      <li data-lang="pt" class="lang active">Especialização em Tecnologia Java – UNOPAR (2024 - 2025)</li>
-      <li data-lang="en" class="lang">Specialization in Java Technology – UNOPAR (2024 - 2025)</li>
-      <li data-lang="pt" class="lang active">MBA em Gestão de Negócios – Faculdade Ruy Barbosa (2007 - 2009)</li>
-      <li data-lang="en" class="lang">MBA in Business Management – Faculdade Ruy Barbosa (2007 - 2009)</li>
-      <li data-lang="pt" class="lang active">Bacharelado em Sistemas de Informação – Faculdade Ruy Barbosa (2002 - 2006)</li>
-      <li data-lang="en" class="lang">Bachelor’s in Information Systems – Faculdade Ruy Barbosa (2002 - 2006)</li>
-      <li data-lang="pt" class="lang active">Curso de Inglês – Dublin School of English, Irlanda (2011 - 2012)</li>
-      <li data-lang="en" class="lang">English Course – Dublin School of English, Ireland (2011 - 2012)</li>
+    <h2 class="lang pt active">Formação Acadêmica</h2>
+    <h2 class="lang en">Academic Background</h2>
+    <ul class="lang pt active">
+      <li>Especialização em Tecnologia Java – UNOPAR (2024 - 2025)</li>
+      <li>MBA em Gestão de Negócios – Faculdade Ruy Barbosa (2007 - 2009)</li>
+      <li>Bacharelado em Sistemas de Informação – Faculdade Ruy Barbosa (2002 - 2006)</li>
+      <li>Curso de Inglês – Dublin School of English, Irlanda (2011 - 2012)</li>
+    </ul>
+    <ul class="lang en">
+      <li>Specialization in Java Technology – UNOPAR (2024 - 2025)</li>
+      <li>MBA in Business Management – Faculdade Ruy Barbosa (2007 - 2009)</li>
+      <li>Bachelor's in Information Systems – Faculdade Ruy Barbosa (2002 - 2006)</li>
+      <li>English Course – Dublin School of English, Ireland (2011 - 2012)</li>
     </ul>
   </section>
 
   <section>
-    <h2 data-lang="pt" class="lang active">Habilidades Técnicas</h2>
-    <h2 data-lang="en" class="lang">Technical Skills</h2>
-    <ul>
-      <li data-lang="pt" class="lang active">Linguagens: .NET Core C#, Java, Python</li>
-      <li data-lang="en" class="lang">Languages: .NET Core C#, Java, Python</li>
-      <li data-lang="pt" class="lang active">Frameworks: ASP.NET MVC, Entity Framework Core</li>
-      <li data-lang="en" class="lang">Frameworks: ASP.NET MVC, Entity Framework Core</li>
-      <li data-lang="pt" class="lang active">APIs: RESTful, Microserviços</li>
-      <li data-lang="en" class="lang">APIs: RESTful, Microservices</li>
-      <li data-lang="pt" class="lang active">Arquitetura: Design Patterns, SOLID</li>
-      <li data-lang="en" class="lang">Architecture: Design Patterns, SOLID</li>
-      <li data-lang="pt" class="lang active">Banco de Dados: Administração e modelagem relacional</li>
-      <li data-lang="en" class="lang">Databases: Administration and relational modeling</li>
-      <li data-lang="pt" class="lang active">Infraestrutura: Redes e suporte técnico</li>
-      <li data-lang="en" class="lang">Infrastructure: Networks and technical support</li>
+    <h2 class="lang pt active">Cursos e Certificações</h2>
+    <h2 class="lang en">Courses and Certifications</h2>
+    <ul class="lang pt active">
+      <li>Inteligência Artificial – Intermediário e Avançado (2025)</li>
+      <li>Python – Intermediário e Avançado (2024)</li>
+      <li>Gestão de Pessoas – SEBRAE (2009)</li>
+      <li>Oratória e Marketing Pessoal (2008)</li>
+      <li>MS Project (2003)</li>
+      <li>Montagem e Manutenção de Computadores (2001)</li>
+    </ul>
+    <ul class="lang en">
+      <li>Artificial Intelligence – Intermediate and Advanced (2025)</li>
+      <li>Python – Intermediate and Advanced (2024)</li>
+      <li>People Management – SEBRAE (2009)</li>
+      <li>Public Speaking and Personal Marketing (2008)</li>
+      <li>MS Project (2003)</li>
+      <li>Computer Assembly and Maintenance (2001)</li>
     </ul>
   </section>
 
   <section>
-    <h2 data-lang="pt" class="lang active">Atividades Voluntárias</h2>
-    <h2 data-lang="en" class="lang">Volunteer Activities</h2>
-    <ul>
-      <li data-lang="pt" class="lang active">Instrutor de informática básica para comunidades carentes (2002)</li>
-      <li data-lang="en" class="lang">Basic computer instructor for underserved communities (2002)</li>
-      <li data-lang="pt" class="lang active">Trabalho social com a Igreja Senhor do Bonfim, Itabuna (1998)</li>
-      <li data-lang="en" class="lang">Social work with Senhor do Bonfim Church, Itabuna (1998)</li>
+    <h2 class="lang pt active">Habilidades Técnicas</h2>
+    <h2 class="lang en">Technical Skills</h2>
+    <ul class="lang pt active">
+      <li>Linguagens: .NET Core C#, Java, Python</li>
+      <li>Frameworks: ASP.NET MVC, Entity Framework Core</li>
+      <li>APIs: RESTful, Microserviços</li>
+      <li>Arquitetura: Design Patterns, SOLID</li>
+      <li>Bancos de Dados: Modelagem e Administração</li>
+      <li>Infraestrutura: Redes e Suporte Técnico</li>
+    </ul>
+    <ul class="lang en">
+      <li>Languages: .NET Core C#, Java, Python</li>
+      <li>Frameworks: ASP.NET MVC, Entity Framework Core</li>
+      <li>APIs: RESTful, Microservices</li>
+      <li>Architecture: Design Patterns, SOLID</li>
+      <li>Databases: Modeling and Administration</li>
+      <li>Infrastructure: Networks and Technical Support</li>
     </ul>
   </section>
 
   <section>
-    <h2 data-lang="pt" class="lang active">Publicações e Palestras</h2>
-    <h2 data-lang="en" class="lang">Publications and Talks</h2>
-    <ul>
-      <li data-lang="pt" class="lang active">Artigo: Workflowcientefico - O Gerenciamento de Artigos Científicos (Revista Científico, 2006)</li>
-      <li data-lang="en" class="lang">Article: Workflowcientefico - Managing Scientific Papers (Revista Científico, 2006)</li>
-      <li data-lang="pt" class="lang active">Palestrante: Congresso da Sociedade Brasileira de Computação (2004)</li>
-      <li data-lang="en" class="lang">Speaker: Brazilian Computer Society Congress (2004)</li>
+    <h2 class="lang pt active">Idiomas</h2>
+    <h2 class="lang en">Languages</h2>
+    <ul class="lang pt active">
+      <li>Português: Fluente</li>
+      <li>Inglês: Avançado</li>
     </ul>
+    <ul class="lang en">
+      <li>Portuguese: Fluent</li>
+      <li>English: Advanced</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="lang pt active">Voluntariado e Publicações</h2>
+    <h2 class="lang en">Volunteering and Publications</h2>
+    <ul class="lang pt active">
+      <li>Instrutor de informática básica para comunidades carentes</li>
+      <li>Trabalho social com a Igreja Senhor do Bonfim, Itabuna</li>
+      <li>Artigo: Workflowcientefico - Revista Científica (2006)</li>
+      <li>Palestrante: Congresso da Sociedade Brasileira de Computação (2004)</li>
+    </ul>
+    <ul class="lang en">
+      <li>Basic computer instructor for underserved communities</li>
+      <li>Social work with Senhor do Bonfim Church, Itabuna</li>
+      <li>Article: Workflowcientefico – Scientific Journal (2006)</li>
+      <li>Speaker: Brazilian Computer Society Congress (2004)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="lang pt active">Contato</h2>
+    <h2 class="lang en">Contact</h2>
+    <p class="lang pt active">Emails: <a href="mailto:leandrocasp@yahoo.com.br">Yahoo</a> | <a href="mailto:leocasp@gmail.com">Gmail</a></p>
+    <p class="lang en">Emails: <a href="mailto:leandrocasp@yahoo.com.br">Yahoo</a> | <a href="mailto:leocasp@gmail.com">Gmail</a></p>
+    <p class="lang pt active">LinkedIn: <a href="https://linkedin.com/in/leandro-de-castro-pereira-863a33350">linkedin.com/in/leandro-de-castro-pereira</a></p>
+    <p class="lang en">LinkedIn: <a href="https://linkedin.com/in/leandro-de-castro-pereira-863a33350">linkedin.com/in/leandro-de-castro-pereira</a></p>
+    <p class="lang pt active">WhatsApp: <a href="https://wa.me/5573988590827?text=Olá%2C%20gostaria%20de%20mais%20informações.">55 (73) 98859-0827</a></p>
+    <p class="lang en">WhatsApp: <a href="https://wa.me/5573988590827?text=Hello%2C%20I'd%20like%20more%20information.">+55 73 98859-0827</a></p>
+    <p class="lang pt active">Instagram: <a href="https://www.instagram.com/leo_castropereira">@leo_castropereira</a></p>
+    <p class="lang en">Instagram: <a href="https://www.instagram.com/leo_castropereira">@leo_castropereira</a></p>
+    <p class="lang pt active">GitHub: <a href="https://github.com/Leandrocasp" target="_blank">github.com/Leandrocasp</a></p>
+    <p class="lang en">GitHub: <a href="https://github.com/Leandrocasp" target="_blank">github.com/Leandrocasp</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Leandro de Castro Pereira. Todos os direitos reservados.</p>
+    <p class="lang pt active">&copy; 2025 Leandro de Castro Pereira. Todos os direitos reservados.</p>
+    <p class="lang en">&copy; 2025 Leandro de Castro Pereira. All rights reserved.</p>
   </footer>
 
   <script>
     function switchLanguage(lang) {
-      document.querySelectorAll('.lang').forEach(el => {
-        el.classList.remove('active');
-      });
-      document.querySelectorAll(`[data-lang="${lang}"]`).forEach(el => {
-        el.classList.add('active');
-      });
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll(`.lang.${lang}`).forEach(el => el.classList.add('active'));
     }
   </script>
 </body>
